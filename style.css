@@ -2,13 +2,13 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px; /* Base font size for rem calculations */
 }
 
 .first {
-    background-image: url(bg3.png);
+    background-image: url('Backround.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,10 +21,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 5vw;
+    flex-wrap: wrap; /* Enables wrapping for smaller screens */
     box-sizing: border-box;
-    padding: 0 5%;
-
 }
+
 
 .first .container .left-content {
     display: flex;
@@ -43,39 +44,38 @@ body {
 }
 
 .main {
-    margin-left: 600px;
+    margin-left: 37.5rem;
 
 }
-
 .first .container .left-content img {
-    width: 1000px;
-    border-radius: 20px;
-
+    width: 62.5rem; /* 1000px converted to rem */
+    border-radius: 1.25rem; /* 20px converted to rem */
 }
+
 
 .first .container .left-content .image-card {
-
     position: absolute;
-    bottom: 90px;
-    left: 120px;
+    bottom: 5.625rem; /* 90px converted to rem */
+    left: 7.5rem; /* 120px converted to rem */
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 210px;
-    height: 230px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    width: 13.125rem; /* 210px converted to rem */
+    height: 14.375rem; /* 230px converted to rem */
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1); /* 4px and 10px converted to rem */
+    border-radius: 0.3125rem; /* 5px converted to rem */
     z-index: 2;
 }
 
+
 .first .container .left-content .image-card img {
-    width: 130px;
-    height: 150px;
+    width: 8.125rem; /* 130px converted to rem */
+    height: 9.375rem; /* 150px converted to rem */
     border-radius: 50%;
 }
 
 .first .container .left-content .image-card .name {
-    margin-left: 10px;
+    margin-left: 0.625rem; /* 10px converted to rem */
 }
 
 .left-content .image-card .name h3 {
@@ -85,15 +85,14 @@ body {
 
 .first .container .left-content .image-card .name p {
     font-size: 0.7rem;
-    margin: 5px 0 0;
+    margin: 0.3125rem 0 0; /* 5px converted to rem */
     font-weight: 300;
     color: #555;
 }
 
 .right-content {
-    max-width: 100px;
     max-width: 50%;
-    margin-right: 150px;
+    margin-right: 9.375rem; /* 150px converted to rem */
 }
 
 .right-content h1 {
@@ -102,11 +101,11 @@ body {
     line-height: 1.2;
     color: #333;
     margin: 0;
-    max-width: 470px;
+    max-width: 29.375rem; /* 470px converted to rem */
 }
 
 .right-content p {
-    margin: 20px 0;
+    margin: 1.25rem 0; /* 20px converted to rem */
     font-size: 1.1rem;
     line-height: 1.6;
     color: #666;
@@ -115,36 +114,38 @@ body {
 .search-bar {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 1.25rem; /* 20px converted to rem */
     background: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 10px;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1); /* 4px and 10px converted to rem */
+    border-radius: 0.625rem; /* 10px converted to rem */
+    padding: 0.625rem; /* 10px converted to rem */
     width: 80%;
 }
 
+
 .search-bar input {
     flex: 1;
-    padding: 10px;
+    padding: 0.625rem; /* 10px converted to rem */
     font-size: 1rem;
     border: none;
     outline: none;
 }
 
 .search-bar .icon-container {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem; /* 40px converted to rem */
+    height: 2.5rem; /* 40px converted to rem */
     background-color: #7a4dff;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
+    border-radius: 0.3125rem; /* 5px converted to rem */
 }
 
 .search-bar .icon-container img {
-    width: 20px;
-    height: 20px;
+    width: 1.25rem; /* 20px converted to rem */
+    height: 1.25rem; /* 20px converted to rem */
 }
+
 
 .decorations {
     position: absolute;
@@ -159,17 +160,16 @@ body {
     position: absolute;
     bottom: 5%;
     right: 10%;
-    width: 150px;
-    height: 150px;
+    width: 9.375rem; /* 150px converted to rem */
+    height: 9.375rem; /* 150px converted to rem */
     z-index: -1;
 }
-
 .top-buttons {
     position: absolute;
-    top: 20px;
+    top: 1.25rem; /* 20px converted to rem */
     right: 5%;
     display: flex;
-    gap: 15px;
+    gap: 0.9375rem; /* 15px converted to rem */
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -179,8 +179,9 @@ body {
     font-weight: 400;
     color: #000;
     background: none;
-    margin-top: 6px;
+    margin-top: 0.375rem; /* 6px converted to rem */
 }
+
 
 .top-buttons a:last-child {
     text-decoration: none;
@@ -188,8 +189,8 @@ body {
     font-weight: 400;
     color: #666;
     background: #f2f2f2;
-    padding: 5px 15px;
-    border-radius: 20px;
+    padding: 0.3125rem 0.9375rem; /* 5px and 15px converted to rem */
+    border-radius: 1.25rem; /* 20px converted to rem */
 }
 
 .profile-card {
@@ -1095,3 +1096,290 @@ body {
     margin-top: -150px;
     margin-right: -150px;
 }
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 3vw;
+    }
+
+    .right-content h1 {
+        font-size: 3rem;
+        margin-top: 2rem; /* Add margin-top to move the heading down */
+    }
+
+    .first .container .left-content img {
+        width: 50rem; /* Reduce image size */
+    }
+
+    .first .container .left-content .image-card {
+        width: 10rem; /* Reduce image-card size */
+        height: 11rem; /* Reduce image-card size */
+    }
+
+    .right-content p {
+        font-size: 1rem;
+    }
+
+    .search-bar {
+        width: 90%;
+    }
+
+    .second .left-content h1 {
+        font-size: 3rem;
+    }
+
+    .second .left-content p {
+        font-size: 0.9rem;
+    }
+
+    .second .left-content .details-button {
+        width: 180px;
+        height: 30px;
+    }
+
+    .second .product-card .text-container h3 {
+        font-size: 0.9rem;
+    }
+
+    .second .product-card .text-container .price-container .price {
+        font-size: 0.8rem;
+    }
+
+    .second .product-card .text-container .price-container .price .dollars {
+        font-size: 0.9rem;
+    }
+
+    .second .product-card .text-container .price-container .price .cents {
+        font-size: 0.8rem;
+    }
+
+    .fifth .form-container {
+        padding: 50px;
+    }
+
+    .fifth .form-container h2 {
+        font-size: 1.3rem;
+    }
+
+    .fifth .form-container input,
+    .fifth .form-container textarea {
+        padding: 15px 50px 15px 40px;
+    }
+
+    .fifth .form-container button {
+        width: 80%;
+        height: 45px;
+    }
+
+    .fifth .image-container img {
+        width: 75%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .right-content {
+        max-width: 50%;
+        margin-right: 0;
+        text-align: left;
+    }
+
+    .right-content h1 {
+        font-size: 2.5rem;
+        margin-top: 2rem; /* Add margin-top to move the heading down */
+    }
+
+    .first .container .left-content img {
+        width: 40rem; /* Further reduce image size */
+    }
+
+    .first .container .left-content .image-card {
+        width: 8rem; /* Further reduce image-card size */
+        height: 9rem; /* Further reduce image-card size */
+    }
+
+    .right-content p {
+        font-size: 0.9rem;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .second .top-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .second .top-section .left-text {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .second .top-section .right-logos {
+        margin-top: 20px;
+    }
+
+    .second .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .second .left-content {
+        max-width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .second .left-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .second .left-content p {
+        font-size: 0.8rem;
+    }
+
+    .second .left-content .details-button {
+        width: 160px;
+        height: 30px;
+        margin-top: 50px;
+    }
+
+    .second .right-content {
+        margin-top: 0;
+    }
+
+    .third {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .third .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .fourth {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fourth .revenue-cards,
+    .fourth .details-section {
+        max-width: 100%;
+        padding-right: 0;
+    }
+
+    .fourth .details-section {
+        text-align: center;
+    }
+
+    .fifth {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px;
+    }
+
+    .fifth .form-container {
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+
+    .fifth .image-container img {
+        margin-top: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9rem;
+    }
+    .container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .right-content {
+        max-width: 50%;
+        margin-right: 0;
+        text-align: left;
+    }
+
+    .right-content h1 {
+        font-size: 2rem;
+        margin-top: 2rem; /* Add margin-top to move the heading down */
+    }
+
+    .first .container .left-content img {
+        width: 30rem; /* Further reduce image size */
+    }
+
+    .first .container .left-content .image-card {
+        width: 6rem; /* Further reduce image-card size */
+        height: 7rem; /* Further reduce image-card size */
+    }
+
+    .right-content p {
+        font-size: 0.8rem;
+    }
+
+    .second .left-content h1 {
+        font-size: 2rem;
+    }
+
+    .second .left-content p {
+        font-size: 0.7rem;
+    }
+
+    .second .left-content .details-button {
+        width: 140px;
+        height: 25px;
+    }
+
+    .second .product-card .text-container h3 {
+        font-size: 0.8rem;
+    }
+
+    .second .product-card .text-container .price-container .price {
+        font-size: 0.7rem;
+    }
+
+    .second .product-card .text-container .price-container .price .dollars {
+        font-size: 0.8rem;
+    }
+
+    .second .product-card .text-container .price-container .price .cents {
+        font-size: 0.7rem;
+    }
+
+    .fifth .form-container {
+        padding: 30px;
+    }
+
+    .fifth .form-container h2 {
+        font-size: 1.2rem;
+    }
+
+    .fifth .form-container input,
+    .fifth .form-container textarea {
+        padding: 10px 40px 10px 30px;
+    }
+
+    .fifth .form-container button {
+        width: 90%;
+        height: 40px;
+    }
+
+    .fifth .image-container img {
+        width: 85%;
+    }
+}
+
