@@ -1231,6 +1231,10 @@ body {
 }
 
 @media (max-width: 768px) {
+    .first{
+        overflow-x: hidden;
+    }
+    
     .first .container {
         padding: 0 3vw;
 
@@ -1405,6 +1409,9 @@ body {
 }
 
 @media (max-width: 480px) {
+    .body{
+        overflow-x: hidden;
+    }
     .first .container {
         padding: 0 3vw;
     }
@@ -1583,9 +1590,11 @@ body {
         top: 250px;
 
     }
-    .fifth{
+
+    .fifth {
         margin-top: 20em;
     }
+
     .fifth .form-container {
         padding: 30px;
     }
@@ -1594,7 +1603,7 @@ body {
         font-size: 1.2rem;
     }
 
-  
+
 
     .fifth .form-container button {
         width: 90%;
@@ -1614,5 +1623,12 @@ body {
     .fifth .form-container .input-group .icon.message,
     .fifth .form-container .input-group .icon.mail {
         font-size: 0.7em;
+    }
+
+    .fifth .form-container input,
+    .fifth .form-container textarea {
+
+        width: 100%;
+        padding: 20px 20px 20px 50px;
     }
 }
