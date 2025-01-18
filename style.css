@@ -1291,7 +1291,6 @@ body {
 
     .first .container .left-content {
         margin-left: -9em;
-
     }
 
     .first .container .left-content .image-card {
@@ -1327,6 +1326,7 @@ body {
     }
 
     .second .left-content {
+        
         max-width: 100%;
         margin-left: 0;
         text-align: center;
@@ -1374,7 +1374,7 @@ body {
     .third {
         flex-direction: column;
         align-items: center;
-        margin-top: 10em;
+        margin-top: 100px;
     }
 
     .third .card {
