@@ -9,7 +9,7 @@ body {
 }
 
 .first {
-    background-image: url('Backround.png');
+    background-image: url('../src/images/Backround.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,7 +24,6 @@ body {
     justify-content: space-between;
     padding: 0 5vw;
     flex-wrap: wrap;
-    /* Enables wrapping for smaller screens */
     box-sizing: border-box;
 }
 
@@ -52,44 +51,33 @@ body {
 
 .first .container .left-content img {
     width: 62.5rem;
-    /* 1000px converted to rem */
     border-radius: 1.25rem;
-    /* 20px converted to rem */
 }
 
 
 .first .container .left-content .image-card {
     position: absolute;
     bottom: 5.625rem;
-    /* 90px converted to rem */
     left: 7.5rem;
-    /* 120px converted to rem */
     display: flex;
     align-items: center;
     justify-content: center;
     width: 13.125rem;
-    /* 210px converted to rem */
     height: 14.375rem;
-    /* 230px converted to rem */
     box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
-    /* 4px and 10px converted to rem */
     border-radius: 0.3125rem;
-    /* 5px converted to rem */
     z-index: 2;
 }
 
 
 .first .container .left-content .image-card img {
     width: 8.125rem;
-    /* 130px converted to rem */
     height: 9.375rem;
-    /* 150px converted to rem */
     border-radius: 50%;
 }
 
 .first .container .left-content .image-card .name {
     margin-left: 0.625rem;
-    /* 10px converted to rem */
 }
 
 .left-content .image-card .name h3 {
@@ -100,7 +88,6 @@ body {
 .first .container .left-content .image-card .name p {
     font-size: 0.7rem;
     margin: 0.3125rem 0 0;
-    /* 5px converted to rem */
     font-weight: 300;
     color: #555;
 }
@@ -108,7 +95,6 @@ body {
 .right-content {
     max-width: 50%;
     margin-right: 9.375rem;
-    /* 150px converted to rem */
 }
 
 .right-content h1 {
@@ -118,12 +104,10 @@ body {
     color: #333;
     margin: 0;
     max-width: 29.375rem;
-    /* 470px converted to rem */
 }
 
 .right-content p {
     margin: 1.25rem 0;
-    /* 20px converted to rem */
     font-size: 1.1rem;
     line-height: 1.6;
     color: #666;
@@ -197,12 +181,10 @@ body {
 
 .top-buttons {
     position: absolute;
-    top: 1.25rem;
-    /* 20px converted to rem */
+    top: 20px;
     right: 5%;
     display: flex;
     gap: 0.9375rem;
-    /* 15px converted to rem */
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -213,7 +195,6 @@ body {
     color: #000;
     background: none;
     margin-top: 0.375rem;
-    /* 6px converted to rem */
 }
 
 
@@ -443,7 +424,7 @@ body {
     display: flex;
     gap: 20px;
     margin-right: 2%;
-    margin-top: 10%;
+    margin-top: 50px;
 }
 
 
@@ -619,7 +600,7 @@ body {
     padding-bottom: 120px;
     padding-top: 50px;
 
-    background-image: url('Untitled design-2.png');
+    background-image: url('../src/images/secondbg.png');
     background-size: 73%;
     background-position: left;
     background-repeat: no-repeat;
@@ -995,7 +976,7 @@ body {
     align-items: center;
     padding: 100px;
 
-    background-image: url(bg4copy.png);
+    background-image: url('../src/images/bg4copy.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
