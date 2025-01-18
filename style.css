@@ -660,37 +660,27 @@ body {
 
 .fourth {
     display: flex;
-    justify-content: space-between;
-    /* Keep elements side by side */
-    align-items: flex-start;
-    /* Align both sections to the top */
-    padding: 20px;
-    /* Reduce padding to minimize gaps */
+    justify-content: space-between; /* Keep elements side by side */
+    align-items: flex-start; /* Align both sections to the top */
+    padding: 20px; /* Reduce padding to minimize gaps */
     background-color: #ffffff;
-    margin-top: 170px;
-    /* Adjust margin for overall spacing */
+    margin-top: 170px; /* Adjust margin for overall spacing */
     padding-bottom: 200px;
 }
 
-/* Revenue Cards Container */
 .fourth .revenue-cards {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    /* Reduce gap between cards */
+    flex-direction: column; /* Cards stack vertically */
+    gap: 20px; /* Reduce gap between cards */
     position: relative;
     margin-top: 0;
-    /* Align with details-section */
 }
 
-/* Details Section */
 .fourth .details-section {
     text-align: left;
     max-width: 330px;
     margin-top: 20px;
-    /* Align with revenue-cards */
-    padding-right: 200px;
-    /* Add some space between sections */
+    padding-right: 200px; /* Add some space between sections */
 }
 
 .fourth .image-container {
@@ -962,6 +952,7 @@ body {
     font-size: 9px; /* Adjust size as needed */
   }
   
+
 /* Fifth Section Styling */
 .fifth {
     margin-top: 150px;
@@ -1097,30 +1088,37 @@ body {
     margin-right: -150px;
 }
 
+
 @media (max-width: 1200px) {
-    .container {
+    .first .container {
         padding: 0 3vw;
+        
     }
-
-    .right-content h1 {
+    .first .right-content {
+        max-width: 38%;
+        margin-right: 0.9em;
+    }
+    .first .right-content h1 {
         font-size: 3rem;
-        margin-top: 2rem; /* Add margin-top to move the heading down */
     }
 
-    .first .container .left-content img {
-        width: 50rem; /* Reduce image size */
-    }
-
-    .first .container .left-content .image-card {
-        width: 10rem; /* Reduce image-card size */
-        height: 11rem; /* Reduce image-card size */
-    }
-
-    .right-content p {
+    .first .right-content p {
         font-size: 1rem;
     }
+    .first .container .main {
+        width: 50rem; 
+        border-radius: 1.25rem; 
+    }
+    .first .container .left-content {
+        margin-left: -8em;
 
-    .search-bar {
+    }
+    .first .container .left-content .image-card {
+        width: 12rem; 
+        height: 14rem;
+        margin-left: 5em;
+    }
+    .first .search-bar {
         width: 90%;
     }
 
@@ -1152,7 +1150,23 @@ body {
     .second .product-card .text-container .price-container .price .cents {
         font-size: 0.8rem;
     }
+    .fourth {
+        flex-direction: column; /* Stack the sections vertically */
+        align-items: flex-start; /* Align sections to the left */
+    }
 
+
+    .fourth .revenue-cards,
+    .fourth .details-section {
+        max-width: 100%;
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .fourth .details-section {
+        text-align: left;
+        margin-top: 20px;
+    }
     .fifth .form-container {
         padding: 50px;
     }
@@ -1177,41 +1191,38 @@ body {
 }
 
 @media (max-width: 768px) {
-    .container {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-
+    .first .container {
+        padding: 0 3vw;
+        
+    }
+    .first .right-content {
+        max-width: 45%;
+        margin-right: 0.9em;
+    }
+    .first .right-content h1 {
+        font-size: 3rem;
     }
 
-    .right-content {
-        max-width: 50%;
-        margin-right: 0;
-        text-align: left;
+    .first .right-content p {
+        font-size: 1rem;
     }
-
-    .right-content h1 {
-        font-size: 2.5rem;
-        margin-top: 2rem; /* Add margin-top to move the heading down */
+    .first .container .main {
+        width: 50rem; 
+        border-radius: 1.25rem; 
     }
+    .first .container .left-content {
+        margin-left: -9em;
 
-    .first .container .left-content img {
-        width: 40rem; /* Further reduce image size */
     }
-
     .first .container .left-content .image-card {
-        width: 8rem; /* Further reduce image-card size */
-        height: 9rem; /* Further reduce image-card size */
+        width: 12rem; 
+        height: 14rem;
+        margin-left: 2em;
+    }
+    .first .search-bar {
+        width: 90%;
     }
 
-    .right-content p {
-        font-size: 0.9rem;
-    }
-
-    .search-bar {
-        width: 100%;
-        margin-top: 10px;
-    }
 
     .second .top-section {
         flex-direction: column;
@@ -1267,8 +1278,8 @@ body {
     }
 
     .fourth {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Stack the sections vertically */
+        align-items: center; /* Center align for small screens */
     }
 
     .fourth .revenue-cards,
@@ -1279,6 +1290,10 @@ body {
 
     .fourth .details-section {
         text-align: center;
+        margin-top: 20px;
+    }
+    .fourth .revenue-cards {
+        margin-bottom: 20px; /* Space below the cards */
     }
 
     .fifth {
@@ -1299,36 +1314,82 @@ body {
 }
 
 @media (max-width: 480px) {
-    body {
-        font-size: 0.9rem;
+    .first .container {
+        padding: 0 3vw;
     }
-    .container {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .right-content {
-        max-width: 50%;
-        margin-right: 0;
-        text-align: left;
-    }
+    .first .right-content {
+        max-width: 45%;
+        margin-right: 0.9em;
+        margin-top: -6em;
 
-    .right-content h1 {
+    }
+    .first .right-content h1 {
         font-size: 2rem;
-        margin-top: 2rem; /* Add margin-top to move the heading down */
     }
 
-    .first .container .left-content img {
-        width: 30rem; /* Further reduce image size */
+    .first .right-content p {
+        font-size: 1rem;
     }
+    .first .container .main {
+        width: 50rem; 
+        border-radius: 1.25rem; 
+    }
+    .first .container .left-content {
+        margin-left: -9em;
+        margin-top: -6em;
 
+    }
     .first .container .left-content .image-card {
-        width: 6rem; /* Further reduce image-card size */
-        height: 7rem; /* Further reduce image-card size */
-    }
+        width: 9rem; 
+        height: 10rem;
+        margin-left: 1em;
+        overflow: hidden;
 
-    .right-content p {
-        font-size: 0.8rem;
+    }
+    .first .container .main .main-image {
+        margin-left: 6em;
+        width: 80%;
+        height: 80%;
+    }
+    .profile-card{
+        margin-top: -1em;
+    }
+    .profile-card .image-container .outer-circle {
+        width: 5.5em;
+        height: 5.5em;
+    }
+    .profile-card .image-container .yellow-circle {
+        width: 4em;
+        height: 4em;
+    }
+    .profile-card .image-container {
+        width:7em ;
+        height: 7em;
+        top: 1.1em;
+        left: 0.7em;
+    }
+    .profile-card .image-container img {
+        width: 6rem !important;
+        height: 7rem !important;
+        margin-top:-1em;
+        margin-left: -0.6em;
+    }
+    .profile-card .name {
+        margin-top:-1em;
+
+    }
+    .first .search-bar {
+        width: 80%;
+    }
+    .first .search-bar input {
+        font-size: 0.6rem;
+        padding: 0.4rem; 
+
+    }
+    .search-bar .icon-container {
+        margin-left: -2em ;
+        width: 1.5em;
+        height: 1.5em;
     }
 
     .second .left-content h1 {
@@ -1338,7 +1399,7 @@ body {
     .second .left-content p {
         font-size: 0.7rem;
     }
-
+    
     .second .left-content .details-button {
         width: 140px;
         height: 25px;
@@ -1359,7 +1420,25 @@ body {
     .second .product-card .text-container .price-container .price .cents {
         font-size: 0.7rem;
     }
+    .fourth {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .fourth .revenue-cards,
+    .fourth .details-section {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .fourth .details-section {
+        text-align: center;
+        margin-top: 20px; /* Add some space between the sections */
+    }
+
+    .fourth .revenue-cards {
+        padding-bottom: -220px; /* Add space between the cards and the details section */
+    }
     .fifth .form-container {
         padding: 30px;
     }
@@ -1383,3 +1462,4 @@ body {
     }
 }
 
+/* ...existing code... */
