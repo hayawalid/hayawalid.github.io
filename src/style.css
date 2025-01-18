@@ -328,8 +328,6 @@ body {
 
 .second .top-section .right-logos span {
     margin-right: 20px;
-    font-size: 1rem;
-    color: #555;
 }
 
 .second .container {
@@ -1296,9 +1294,8 @@ body {
         font-size: 0.8em;
     }
 
-    .second .top-section .right-logos {
-        font-size: 0.005em;
-
+    .second .top-section .right-logos img {
+        width: 40px;
     }
 
     .second .container {
