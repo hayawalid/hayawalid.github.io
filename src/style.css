@@ -5,7 +5,6 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-size: 16px;
-    /* Base font size for rem calculations */
 }
 
 .first {
@@ -117,14 +116,10 @@ body {
     display: flex;
     align-items: center;
     margin-top: 1.25rem;
-    /* 20px converted to rem */
     background: #fff;
     box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
-    /* 4px and 10px converted to rem */
     border-radius: 0.625rem;
-    /* 10px converted to rem */
     padding: 0.625rem;
-    /* 10px converted to rem */
     width: 80%;
 }
 
@@ -132,7 +127,6 @@ body {
 .search-bar input {
     flex: 1;
     padding: 0.625rem;
-    /* 10px converted to rem */
     font-size: 1rem;
     border: none;
     outline: none;
@@ -140,22 +134,17 @@ body {
 
 .search-bar .icon-container {
     width: 2.5rem;
-    /* 40px converted to rem */
     height: 2.5rem;
-    /* 40px converted to rem */
     background-color: #7a4dff;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 0.3125rem;
-    /* 5px converted to rem */
 }
 
 .search-bar .icon-container img {
     width: 1.25rem;
-    /* 20px converted to rem */
     height: 1.25rem;
-    /* 20px converted to rem */
 }
 
 
@@ -173,9 +162,7 @@ body {
     bottom: 5%;
     right: 10%;
     width: 9.375rem;
-    /* 150px converted to rem */
     height: 9.375rem;
-    /* 150px converted to rem */
     z-index: -1;
 }
 
@@ -205,9 +192,7 @@ body {
     color: #666;
     background: #f2f2f2;
     padding: 0.3125rem 0.9375rem;
-    /* 5px and 15px converted to rem */
     border-radius: 1.25rem;
-    /* 20px converted to rem */
 }
 
 .profile-card {
@@ -294,7 +279,6 @@ body {
 
 .second .left-content {
     text-align: left;
-    /* Aligns all child elements to the left */
 }
 
 .second .left-content h2,
@@ -302,12 +286,10 @@ body {
 .second .left-content p,
 .second .left-content .details-button {
     margin-left: 0;
-    /* Ensure no margin pushes elements away from the left */
 }
 
 .second .left-content .details-button {
     display: inline-block;
-    /* Ensures button respects alignment */
 }
 
 .second .top-section {
@@ -391,31 +373,23 @@ body {
 .second .left-content .details-button span {
     font-weight: 100;
     flex: 1;
-    /* Takes remaining space to keep text centered */
     text-align: center;
-    /* Centers text horizontally */
 }
 
 .second .left-content .details-button .circle {
     margin-right: -17px;
     background-color: #fff;
-    /* White background for the circle */
     width: 47px;
     height: 47px;
     border-radius: 50%;
-    /* Makes it a circle */
     display: flex;
     align-items: center;
-    /* Centers the arrow vertically */
     justify-content: center;
-    /* Centers the arrow horizontally */
 }
 
 .second .left-content .details-button .circle i {
     color: #7a4dff;
-    /* Purple color for the arrow */
     font-size: 1rem;
-    /* Adjust icon size */
 }
 
 .second .right-content {
@@ -486,24 +460,18 @@ body {
     z-index: 1;
     width: 180px;
     bottom: -30px;
-    /* Adjust position as needed */
     right: 10px;
-    /* Align bottom-right */
 }
 
 /* Chair Card (Bottom Right) */
 .second .product-card.chair .text-container {
     bottom: -32%;
-    /* Position at the bottom */
     right: 1%;
-    /* Align to the right */
 }
 
 
-/* Divider Line (hr) */
 .second .product-card .text-container hr {
     width: 90%;
-    /* Adjust the percentage or set a fixed width, e.g., 100px */
     border: none;
     border-top: 2px solid #f3f3f3;
     margin: 27px auto;
@@ -514,12 +482,9 @@ body {
     margin-top: 25px;
 }
 
-/* Headphones Card (Bottom Left) */
 .second .product-card.headphones .text-container {
     bottom: -35%;
-    /* Position at the bottom */
     left: 5%;
-    /* Align to the left */
 }
 
 .second .product-card .text-container h3 {
@@ -549,16 +514,12 @@ body {
 
 .second .product-card .text-container .price-container .price .dollars {
     font-size: 1rem;
-    /* Slightly larger for emphasis */
     font-weight: 700;
-    /* Bolder font weight */
 }
 
 .second .product-card .text-container .price-container .price .cents {
     font-size: 1rem;
-    /* Smaller font size for cents */
     font-weight: 200;
-    /* Lighter font weight */
     margin-left: 2px;
 }
 
@@ -593,7 +554,6 @@ body {
     justify-content: center;
     gap: 20px;
     padding: 20px;
-    /* Light gray background */
     margin-top: -60px;
     padding-bottom: 120px;
     padding-top: 50px;
@@ -613,7 +573,6 @@ body {
     overflow: hidden;
     transition: transform 0.3s ease;
     text-align: left;
-    /* Aligns text to the left */
 }
 
 .third .card:hover {
@@ -623,9 +582,7 @@ body {
 /* Card Image Container */
 .third .card-image-container {
     padding: 15px;
-    /* Adds padding around the image */
     text-align: center;
-    /* Centers the image */
 }
 
 .third .card-image {
@@ -633,7 +590,6 @@ body {
     height: auto;
     display: block;
     border-radius: 10px;
-    /* Optional: slightly round the image corners */
 }
 
 /* Card Content */
@@ -647,17 +603,14 @@ body {
     margin: 10px 0;
     color: #333;
     text-align: left;
-    /* Aligns heading to the left */
 }
 
 .third .card-content p {
     font-size: 0.9rem;
     color: gray;
-    /* Makes paragraph text gray */
     line-height: 1.5;
     margin-top: 5px;
     text-align: left;
-    /* Aligns paragraph text to the left */
 }
 
 
@@ -666,23 +619,17 @@ body {
 .fourth {
     display: flex;
     justify-content: space-between;
-    /* Keep elements side by side */
     align-items: flex-start;
-    /* Align both sections to the top */
     padding: 20px;
-    /* Reduce padding to minimize gaps */
     background-color: #ffffff;
     margin-top: 170px;
-    /* Adjust margin for overall spacing */
     padding-bottom: 200px;
 }
 
 .fourth .revenue-cards {
     display: flex;
     flex-direction: column;
-    /* Cards stack vertically */
     gap: 20px;
-    /* Reduce gap between cards */
     position: relative;
     margin-top: 0;
 }
@@ -692,7 +639,6 @@ body {
     max-width: 330px;
     margin-top: 20px;
     padding-right: 200px;
-    /* Add some space between sections */
 }
 
 .fourth .image-container {
@@ -769,17 +715,13 @@ body {
 
 .fourth .circle.left-cover {
     left: 100px;
-    /* Shift left for overlap */
     z-index: 2;
-    /* Place above rectangle */
 }
 
 .fourth .circle.right-cover {
     right: -600px;
-    /* Shift right for overlap */
     top: 250px;
     z-index: 2;
-    /* Place above rectangle */
 }
 
 .fourth .circle.green {
@@ -887,26 +829,17 @@ body {
 .fourth .details-button {
     letter-spacing: 1px;
     display: flex;
-    /* Aligns the text and circle side by side */
     align-items: center;
-    /* Centers content vertically */
     justify-content: space-between;
-    /* Pushes text and circle to edges */
     padding: 10px 20px;
     background: linear-gradient(90deg, #a359ff, #7a4dff);
-    /* Gradient colors */
     color: #fff;
-    /* White text color */
     text-decoration: none;
-    /* Removes underline */
     border-radius: 50px;
-    /* Rounded corners */
     font-size: 1rem;
     font-weight: 600;
     width: 210px;
-    /* Fixed width */
     height: 35px;
-    /* Adjust height for centering */
     position: relative;
     margin-top: 70px;
 }
@@ -920,24 +853,17 @@ body {
 .fourth .details-button .circle {
     margin-left: 180px;
     background-color: #fff;
-    /* White background for the circle */
     width: 47px;
-    /* Circle dimensions */
     height: 47px;
     border-radius: 50%;
-    /* Makes it a circle */
     display: flex;
     align-items: center;
-    /* Centers the arrow vertically */
     justify-content: center;
-    /* Centers the arrow horizontally */
 }
 
 .fourth .details-button .circle i {
     color: #7a4dff;
-    /* Purple color for the arrow */
     font-size: 1rem;
-    /* Adjust icon size */
 }
 
 .fourth .circle-container {
@@ -947,22 +873,18 @@ body {
 
 .fourth .purple-circle {
     width: 15px;
-    /* Adjust size as needed */
     height: 15px;
-    /* Adjust size as needed */
     background-color: rgb(112, 73, 241);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 5px;
-    /* Spacing between the circle and the number */
 }
 
 .fourth .purple-circle i {
     color: white;
     font-size: 9px;
-    /* Adjust size as needed */
 }
 
 
@@ -1011,7 +933,6 @@ body {
     top: 55%;
     transform: translateY(-50%);
     color: #888;
-    /* Icon color */
     font-size: 1rem;
 }
 
@@ -1021,7 +942,6 @@ body {
     top: 25%;
     transform: translateY(-50%);
     color: #888;
-    /* Icon color */
     font-size: 1rem;
 
 }
@@ -1031,32 +951,26 @@ body {
 
     width: 100%;
     padding: 20px 70px 20px 50px;
-    /* Adjust padding for icons */
     border: none;
     font-size: 1rem;
     background-color: #f7f7f7;
     box-sizing: border-box;
-    /* Ensures padding is included in width */
 }
 
 .fifth .form-container input {
     border-radius: 30px;
-    /* Specific border radius for input */
 }
 
 .fifth .form-container textarea {
     border-radius: 20px;
-    /* Specific border radius for input */
 }
 
 .fifth .form-container input::placeholder {
     color: #555;
-    /* Darker gray for email placeholder */
 }
 
 .fifth .form-container textarea::placeholder {
     color: #888;
-    /* Lighter gray for message placeholder */
 }
 
 .fifth .form-container textarea {
@@ -1077,7 +991,6 @@ body {
     cursor: pointer;
     transition: transform 0.2s ease;
     margin: 20px auto 0;
-    /* Center the button and add top margin */
     display: block;
 }
 
@@ -1208,6 +1121,7 @@ body {
         width: 75%;
     }
 }
+
 @media (max-width: 1200px) {
     .fourth {
         margin-top: 20em;
@@ -1240,11 +1154,12 @@ body {
 
 
 }
+
 @media (max-width: 768px) {
-    .first{
+    .first {
         overflow-x: hidden;
     }
-    
+
     .first .container {
         padding: 0 3vw;
 
@@ -1304,7 +1219,7 @@ body {
     }
 
     .second .left-content {
-        
+
         max-width: 100%;
         margin-left: 0;
         text-align: center;
@@ -1418,9 +1333,10 @@ body {
 }
 
 @media (max-width: 480px) {
-    .body{
+    .body {
         overflow-x: hidden;
     }
+
     .first .container {
         padding: 0 3vw;
     }
@@ -1545,9 +1461,7 @@ body {
 
     .fourth {
         flex-direction: column;
-        /* Stack the sections vertically */
         align-items: center;
-        /* Center align for small screens */
     }
 
     .fourth .revenue-cards,
